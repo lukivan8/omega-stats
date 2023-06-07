@@ -16,7 +16,7 @@ async function fetchMastery(player: string) {
   }
 }
 
-async function fetchPlayer(player: string, region: string) {
+async function fetchPlayer(player: string) {
   try {
     let playerData = await os.player(player);
     return playerData;
@@ -31,7 +31,7 @@ export default async function UserPage({
   params: { region: string; player: string };
 }) {
   const masteryData = await fetchMastery(player);
-  const playerData = await fetchPlayer(player, region);
+  const playerData = await fetchPlayer(player);
 
   //TODO: Красивый хэдер с карточкой
   //TODO: Исправить ошибку при переходе на несуществующего игрока
@@ -92,7 +92,6 @@ export default async function UserPage({
       </div>
     );
   } else {
-    console.log(masteryData);
     return (
       <div>
         <Link href={"/"} className="flex items-center absolute left-4 top-10">

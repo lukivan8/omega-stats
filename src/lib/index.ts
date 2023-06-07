@@ -68,12 +68,14 @@ export default class OmegaStrikers {
   }
 
   // < Search Player By ID >
+  // WARNING: НЕ РАБОТАЕТ С ПРОБЕЛАМИ, ПРОТЕСТИТЬ
   async search(playerName: string): Promise<string> {
     const { data } = await this.instance.get(
       `/v1/players?usernameQuery=${playerName}`
     );
     if (data.matches.length == 0) throw new OSError("Player not found.");
-    return searchPlayer(playerName, data);
+    const res = searchPlayer(playerName, data);
+    return res;
   }
 
   async player(playerName: string): Promise<RankedPlayerData> {
@@ -115,8 +117,8 @@ export default class OmegaStrikers {
 
   // < Show Profile Mastery Characters >
   async mastery(playerName: string): Promise<StrikerMastery> {
-    const playerId = await this.search(playerName);
-
+    const player = await this.player(playerName);
+    const playerId = player.playerId;
     const { data } = await this.instance.get(
       `/v2/mastery/${playerId}/characters`
     );
