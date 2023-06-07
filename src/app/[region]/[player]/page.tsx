@@ -47,15 +47,15 @@ export default async function UserPage({
         {masteryData[0] !== undefined ? (
           <div className="w-full flex justify-center">
             <div className="xl:w-1/2 md:w-3/4 w-full flex flex-col divide-y bg-stone-800 rounded-lg">
-              <div className="flex bg-stone-300 text-black md:px-4 rounded-t-lg py-1">
+              <div className="flex bg-stone-300 text-black md:px-4 rounded-t-lg py-1 px-3">
                 <div className="basis-1/5 ">
                   <p className="sm:block hidden">Character</p>
                 </div>
-                <p className="basis-[15%]">Level</p>
-                <p className="basis-1/5">Total</p>
-                <p className="basis-[25%]">Progress</p>
+                <p className="basis-[15%] sm:text-base text-sm">Level</p>
+                <p className="basis-1/5 sm:text-base text-sm">Total</p>
+                <p className="basis-[25%] sm:text-base text-sm">Progress</p>
                 <div className="basis-1/5 flex justify-center">
-                  <p className="self-end">Collected</p>
+                  <p className="self-end sm:text-base text-sm">Collected</p>
                 </div>
               </div>
               {masteryData.map((item, i) =>

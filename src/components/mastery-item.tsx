@@ -29,7 +29,7 @@ export default function MasteryItem({
 
   if (validCharName !== "") {
     return (
-      <div className="flex justify-evenly py-2 md:px-4 px-2 items-center">
+      <div className="flex justify-evenly py-2 md:px-4 px-3 items-center">
         <div className="basis-[20%] md:flex items-center gap-2">
           <Image
             width={40}
@@ -37,13 +37,15 @@ export default function MasteryItem({
             src={"/omega-characters/" + validCharName + ".png"}
             alt={validCharName}
           />
-          <p>{validCharName[0].toUpperCase() + validCharName.slice(1)}</p>
+          <p className="sm:text-base text-sm">
+            {validCharName[0].toUpperCase() + validCharName.slice(1)}
+          </p>
         </div>
         <div className="basis-[15%]">
-          <p>{currentTier}</p>
+          <p className=" sm:text-base text-sm">{currentTier}</p>
         </div>
 
-        <p className="basis-1/5">{totalXp}</p>
+        <p className="basis-1/5  sm:text-base text-sm">{totalXp}</p>
         <div className="basis-[25%]">
           {isNaN(progress) ? (
             <Image alt="ok" src="/star.svg" width={32} height={32} />
