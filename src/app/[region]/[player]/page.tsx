@@ -41,8 +41,10 @@ export default async function UserPage({
         <Link href={"/"} className="flex items-center md:absolute m-4 left-4">
           <Image width={40} height={40} src={"/back.svg"} alt={"404"} />
         </Link>
-        <div className="w-1/2 mx-auto flex justify-center my-10 gap-6">
-          <h2 className="text-6xl font-bold">{playerData.username}</h2>
+        <div className="sm:w-1/2 w-full mx-auto flex justify-center my-6 gap-6">
+          <h2 className="sm:text-6xl text-[2.7rem] font-bold">
+            {playerData.username}
+          </h2>
         </div>
         {masteryData[0] !== undefined ? (
           <div className="w-full flex justify-center">
