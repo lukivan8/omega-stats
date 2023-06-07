@@ -2,7 +2,6 @@ import Image from "next/image";
 import MasteryItem from "@/components/mastery-item";
 import React from "react";
 import { os } from "@/constants/api";
-import fs from "fs";
 import Link from "next/link";
 
 async function fetchMastery(player: string) {
@@ -86,7 +85,7 @@ export default async function UserPage({
             alt={"404"}
           />
           <p className="xl:text-6xl md:text-4xl text-3xl">
-            This player doesn't exist
+            This player doesn&apos;t exist
           </p>
         </div>
       </div>
