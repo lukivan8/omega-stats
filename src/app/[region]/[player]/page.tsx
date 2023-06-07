@@ -35,11 +35,7 @@ export default async function UserPage({
 
   //TODO: Красивый хэдер с карточкой
   //TODO: Исправить ошибку при переходе на несуществующего игрока
-  if (
-    typeof masteryData !== "string" &&
-    typeof playerData !== "string" &&
-    masteryData[0] !== undefined
-  ) {
+  if (typeof masteryData !== "string" && typeof playerData !== "string") {
     return (
       <div>
         <Link href={"/"} className="flex items-center md:absolute m-4 left-4">
@@ -48,27 +44,32 @@ export default async function UserPage({
         <div className="w-1/2 mx-auto flex justify-center my-10 gap-6">
           <h2 className="text-6xl font-bold">{playerData.username}</h2>
         </div>
-
-        <div className="w-full flex justify-center">
-          <div className="xl:w-1/2 md:w-3/4 w-full flex flex-col divide-y bg-stone-800 rounded-lg">
-            <div className="flex bg-stone-300 text-black md:px-4 rounded-t-lg py-1">
-              <div className="basis-1/5 ">
-                <p className="sm:block hidden">Character</p>
+        {masteryData[0] !== undefined ? (
+          <div className="w-full flex justify-center">
+            <div className="xl:w-1/2 md:w-3/4 w-full flex flex-col divide-y bg-stone-800 rounded-lg">
+              <div className="flex bg-stone-300 text-black md:px-4 rounded-t-lg py-1">
+                <div className="basis-1/5 ">
+                  <p className="sm:block hidden">Character</p>
+                </div>
+                <p className="basis-[15%]">Level</p>
+                <p className="basis-1/5">Total</p>
+                <p className="basis-[25%]">Progress</p>
+                <div className="basis-1/5 flex justify-center">
+                  <p className="self-end">Collected</p>
+                </div>
               </div>
-              <p className="basis-[15%]">Level</p>
-              <p className="basis-1/5">Total</p>
-              <p className="basis-[25%]">Progress</p>
-              <div className="basis-1/5 flex justify-center">
-                <p className="self-end">Collected</p>
-              </div>
+              {masteryData.map((item, i) =>
+                item.characterAssetName !== "" ? (
+                  <MasteryItem {...item} key={i} />
+                ) : null
+              )}
             </div>
-            {masteryData.map((item, i) =>
-              item.characterAssetName !== "" ? (
-                <MasteryItem {...item} key={i} />
-              ) : null
-            )}
           </div>
-        </div>
+        ) : (
+          <div className="w-full flex justify-center">
+            <p className="text-xl">This player has no games played</p>
+          </div>
+        )}
       </div>
     );
   } else if (playerData === "Error: Player not found.") {
@@ -91,6 +92,7 @@ export default async function UserPage({
       </div>
     );
   } else {
+    console.log(masteryData);
     return (
       <div>
         <Link href={"/"} className="flex items-center absolute left-4 top-10">

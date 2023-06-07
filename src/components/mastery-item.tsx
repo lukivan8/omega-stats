@@ -1,6 +1,6 @@
 "use client";
 
-import { CharData } from "@/constants/chars";
+import { CharData, CharType } from "@/constants/chars";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Image from "next/image";
 import React from "react";
@@ -10,8 +10,7 @@ function validateCharName(charName: string): string {
   if (!CharData.hasOwnProperty(charName)) {
     return "";
   } else {
-    //@ts-ignore
-    return CharData[charName];
+    return CharData[charName as keyof CharType];
   }
 }
 
