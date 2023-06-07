@@ -1,3 +1,3 @@
-import OmegaStrikers from "../../omega-stats-lib/src";
+import OmegaStrikers from "../lib";
 
 export const os = new OmegaStrikers({ token: null, refresh: null });

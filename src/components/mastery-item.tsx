@@ -4,7 +4,7 @@ import { CharData } from "@/constants/chars";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Image from "next/image";
 import React from "react";
-import { CharacterMastery } from "../../omega-stats-lib/src/utils/dto";
+import { CharacterMastery } from "../lib/utils/dto";
 
 function validateCharName(charName: string): string {
   if (!CharData.hasOwnProperty(charName)) {
