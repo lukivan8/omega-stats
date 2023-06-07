@@ -1,0 +1,1240 @@
+{
+  "timestamp": "2023-06-07T08:57:00.704Z",
+  "entitlements": [
+    {
+      "entitlementType": "BattlePassBadge",
+      "catalogEntries": [
+        { "assetId": "BattlePassBadgeData_S1_1", "ownedByDefault": false },
+        { "assetId": "BattlePassBadgeData_S1_2", "ownedByDefault": false },
+        { "assetId": "BattlePassBadgeData_S1_3", "ownedByDefault": false },
+        { "assetId": "BattlePassBadgeData_S1_4", "ownedByDefault": false }
+      ]
+    },
+    {
+      "entitlementType": "Character",
+      "catalogEntries": [
+        { "assetId": "CD_AngelicSupport", "ownedByDefault": false },
+        { "assetId": "CD_ChaoticRocketeer", "ownedByDefault": false },
+        { "assetId": "CD_CleverSummoner", "ownedByDefault": false },
+        { "assetId": "CD_EDMOni", "ownedByDefault": false },
+        { "assetId": "CD_EmpoweringEnchanter", "ownedByDefault": false },
+        { "assetId": "CD_FlashySwordsman", "ownedByDefault": false },
+        { "assetId": "CD_FlexibleBrawler", "ownedByDefault": true },
+        { "assetId": "CD_HulkingBeast", "ownedByDefault": false },
+        { "assetId": "CD_MagicalPlaymaker", "ownedByDefault": true },
+        { "assetId": "CD_ManipulatingMastermind", "ownedByDefault": false },
+        { "assetId": "CD_NimbleBlaster", "ownedByDefault": false },
+        { "assetId": "CD_RockOni", "ownedByDefault": false },
+        { "assetId": "CD_ShieldUser", "ownedByDefault": false },
+        { "assetId": "CD_SpeedySkirmisher", "ownedByDefault": true },
+        { "assetId": "CD_StalwartProtector", "ownedByDefault": true },
+        { "assetId": "CD_TempoSniper", "ownedByDefault": false },
+        { "assetId": "CD_WhipFighter", "ownedByDefault": false }
+      ]
+    },
+    {
+      "entitlementType": "Emote",
+      "catalogEntries": [
+        { "assetId": "EmoteData_AiMi_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_AiMi_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Asher_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Asher_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Atlas_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Atlas_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Drekar_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Drekar_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Dubu_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Dubu_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Era_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Era_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Estelle_Delighted", "ownedByDefault": false },
+        {
+          "assetId": "EmoteData_Estelle_Disappointed",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoteData_Juliette_Delighted", "ownedByDefault": false },
+        {
+          "assetId": "EmoteData_Juliette_Disappointed",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoteData_Juno_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Juno_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Kai_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Kai_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Luna_Backflip", "ownedByDefault": false },
+        { "assetId": "EmoteData_Luna_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Luna_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Luna_Relax", "ownedByDefault": false },
+        { "assetId": "EmoteData_Luna_Seat", "ownedByDefault": false },
+        { "assetId": "EmoteData_Luna_Spin", "ownedByDefault": false },
+        { "assetId": "EmoteData_Octavia_Delighted", "ownedByDefault": false },
+        {
+          "assetId": "EmoteData_Octavia_Disappointed",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoteData_Rasmus_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Rasmus_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Rune_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Rune_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Vyce_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Vyce_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_X_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_X_Disappointed", "ownedByDefault": false },
+        { "assetId": "EmoteData_Zentaro_Delighted", "ownedByDefault": false },
+        { "assetId": "EmoteData_Zentaro_Disappointed", "ownedByDefault": false }
+      ]
+    },
+    {
+      "entitlementType": "Emoticon",
+      "catalogEntries": [
+        { "assetId": "EmoticonData_5up", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AiMiCatSalad", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AimiCry", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AiMiFree", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AiMiNom", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AimiNoted", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AiMiPat", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AiMiShocked", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AiMiSmug", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AimiSweat", "ownedByDefault": false },
+        { "assetId": "EmoticonData_ALBERTA", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_AngelicSupportMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_AngelicSupportMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_AsherCheer", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AsherDisgust", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AsherPog", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AsherPoint", "ownedByDefault": false },
+        { "assetId": "EmoticonData_ASHLAND", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_ASU_Esports_Association",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_AtlasThink", "ownedByDefault": false },
+        { "assetId": "EmoticonData_AtlasThumbsUp", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BALTIC", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Blau2", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Blau3", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BlobBlushing", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BlobboCheer", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BlobboLove", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BlobboParty", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BlobConfused", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BlobHappy", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BlobMad", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BlobSad", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Boston_College_Gaming",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_BPC", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BPS1Badge1", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BRIARCLIFF", "ownedByDefault": false },
+        { "assetId": "EmoticonData_BROWN", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Bruin_Gaming", "ownedByDefault": false },
+        { "assetId": "EmoticonData_CARLETON", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Challenger", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_ChaoticRocketeerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_ChaoticRocketeerMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_CHICO", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_CleverSummonerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_CleverSummonerMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_CMU", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Code", "ownedByDefault": false },
+        { "assetId": "EmoticonData_COLORADO", "ownedByDefault": false },
+        { "assetId": "EmoticonData_COOG", "ownedByDefault": false },
+        { "assetId": "EmoticonData_CSUDH", "ownedByDefault": false },
+        { "assetId": "EmoticonData_CSULB", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DALHOUSIE", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DALLAS", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DefaultThumbsUp", "ownedByDefault": true },
+        { "assetId": "EmoticonData_DEPAUL", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Diamond", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DJAtlas", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DrekarBusiness", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DrekarDetective", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DrekarSpeechless", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DREXEL", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DrLupo", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DRURY", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DubuBeta", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DubuBop", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DubuCurious", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DubuOne", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DubuPanicked", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DubuShocked", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Ducky", "ownedByDefault": false },
+        { "assetId": "EmoticonData_DUSSELDORF", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Dyrus", "ownedByDefault": false },
+        { "assetId": "EmoticonData_EASTERN", "ownedByDefault": false },
+        { "assetId": "EmoticonData_ECU", "ownedByDefault": false },
+        { "assetId": "EmoticonData_EDMOniMastery", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_EDMOniMasteryAnimated",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_EmpoweringEnchanterMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_EmpoweringEnchanterMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_Enviosity", "ownedByDefault": false },
+        { "assetId": "EmoticonData_EraIsThis", "ownedByDefault": false },
+        { "assetId": "EmoticonData_EraRainDrop", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Esports_Club_at_Florida_State",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_EstelleFacepalm", "ownedByDefault": false },
+        { "assetId": "EmoticonData_EstelleGloat", "ownedByDefault": false },
+        { "assetId": "EmoticonData_ESUG", "ownedByDefault": false },
+        { "assetId": "EmoticonData_EternalFlameDubu", "ownedByDefault": false },
+        { "assetId": "EmoticonData_ETSU", "ownedByDefault": false },
+        { "assetId": "EmoticonData_FANSHAWE", "ownedByDefault": false },
+        { "assetId": "EmoticonData_FERRIS", "ownedByDefault": false },
+        { "assetId": "EmoticonData_FGCU", "ownedByDefault": false },
+        { "assetId": "EmoticonData_FISHER", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_FlashySwordsmanMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_FlashySwordsmanMasteryAnimated",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_FlexibleBrawlerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_FlexibleBrawlerMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_Founder", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Fuslie", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Garden_State_Esports",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_GCU", "ownedByDefault": false },
+        { "assetId": "EmoticonData_GEORGIATECH", "ownedByDefault": false },
+        { "assetId": "EmoticonData_GMU", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Gold", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_GravityMageMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_Hafu", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Halloween_Duboo", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Halloween_Era_Coffin",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_Halloween_Estelle_Nurse",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_Halloween_Juno_Clown",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_Halloween_XWerewolf",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_HAMBURGER", "ownedByDefault": false },
+        { "assetId": "EmoticonData_HARRISBURG", "ownedByDefault": false },
+        { "assetId": "EmoticonData_HAWAII", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_HulkingBeastMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_HulkingBeastMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_HyperX", "ownedByDefault": false },
+        { "assetId": "EmoticonData_IdolAimiHeart", "ownedByDefault": false },
+        { "assetId": "EmoticonData_IEN", "ownedByDefault": false },
+        { "assetId": "EmoticonData_IHSEA", "ownedByDefault": false },
+        { "assetId": "EmoticonData_IKeepItTaco", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Illini_Esports", "ownedByDefault": false },
+        { "assetId": "EmoticonData_ILLINOISTECH", "ownedByDefault": false },
+        { "assetId": "EmoticonData_INDIANA", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JulietteComfy", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JulietteCool", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JulietteCopium", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JulietteDefeated", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JulietteHeart", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_JulietteLightsOut",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_JuliettePunch", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JulietteRave", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JulietteThumbsUp", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JulietteVibe", "ownedByDefault": true },
+        { "assetId": "EmoticonData_JUNIATA", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JunoBop", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JunoCute", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JunoDevious", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JunoFight", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JunoGawk", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JunoGiggle", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JunoShy", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JunoSleep", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JunoSnackTime", "ownedByDefault": false },
+        { "assetId": "EmoticonData_JunoStarry", "ownedByDefault": false },
+        { "assetId": "EmoticonData_KaiGlamour", "ownedByDefault": false },
+        { "assetId": "EmoticonData_KaiShambles", "ownedByDefault": false },
+        { "assetId": "EmoticonData_KEAN", "ownedByDefault": false },
+        { "assetId": "EmoticonData_KENNESAW", "ownedByDefault": false },
+        { "assetId": "EmoticonData_KUTZTOWN", "ownedByDefault": false },
+        { "assetId": "EmoticonData_LAKELAND", "ownedByDefault": false },
+        { "assetId": "EmoticonData_LANGARA", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Liberty_Esports", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Lily", "ownedByDefault": false },
+        { "assetId": "EmoticonData_LJoga", "ownedByDefault": false },
+        { "assetId": "EmoticonData_LONGHORN", "ownedByDefault": false },
+        { "assetId": "EmoticonData_LunaCry", "ownedByDefault": false },
+        { "assetId": "EmoticonData_LunaGlasses", "ownedByDefault": false },
+        { "assetId": "EmoticonData_LunaWizard", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_MagicalPlaymakerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_MagicalPlaymakerMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_Mang0", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_ManipulatingMastermindMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_ManipulatingMastermindMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_MCMASTER", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Mississippi_State_University_Esports",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_Moist", "ownedByDefault": false },
+        { "assetId": "EmoticonData_MONTEVALLO", "ownedByDefault": false },
+        { "assetId": "EmoticonData_MOUNTUNION", "ownedByDefault": false },
+        { "assetId": "EmoticonData_MTSU", "ownedByDefault": false },
+        { "assetId": "EmoticonData_MURRAY", "ownedByDefault": false },
+        { "assetId": "EmoticonData_NCSTATE", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Necrit", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Nemu", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_NimbleBlasterMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_NimbleBlasterMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_NINER", "ownedByDefault": false },
+        { "assetId": "EmoticonData_NJIT", "ownedByDefault": false },
+        { "assetId": "EmoticonData_NORTHWOOD", "ownedByDefault": false },
+        { "assetId": "EmoticonData_NVCC", "ownedByDefault": false },
+        { "assetId": "EmoticonData_NWCIOWA", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Ohio_Northern_University_Esports",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_OHIOSTATE", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Oklahoma_Wesleyan_University",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_OLEMISS", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Omega", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Onigiri", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Placeholder1", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Placeholder2", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Placeholder3", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Placeholder4", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Placeholder5", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Placeholder6", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Placeholder7", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Platinum", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Purdue_University_Gamers_Group",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_Rakin", "ownedByDefault": false },
+        { "assetId": "EmoticonData_RasmusPray", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Rayditz", "ownedByDefault": false },
+        { "assetId": "EmoticonData_REDBIRD", "ownedByDefault": false },
+        { "assetId": "EmoticonData_RIVERSIDE", "ownedByDefault": false },
+        { "assetId": "EmoticonData_RockOniMastery", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_RockOniMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_ROLLINS", "ownedByDefault": false },
+        { "assetId": "EmoticonData_RSU", "ownedByDefault": false },
+        { "assetId": "EmoticonData_RuneClone", "ownedByDefault": false },
+        { "assetId": "EmoticonData_RuneDespair", "ownedByDefault": false },
+        { "assetId": "EmoticonData_RunePoor", "ownedByDefault": false },
+        { "assetId": "EmoticonData_RuneV", "ownedByDefault": false },
+        { "assetId": "EmoticonData_RuneYouAreMe", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Rutgers_Esports", "ownedByDefault": false },
+        { "assetId": "EmoticonData_RWU_Esports", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Saint_Louis_University_Esports",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_SAINTMARY", "ownedByDefault": false },
+        { "assetId": "EmoticonData_SCAD", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder1",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder10",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder11",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder12",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder13",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder14",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder15",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder16",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder17",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder2",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder3",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder4",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder5",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder6",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder7",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder8",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SchoolPlaceholder9",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_SCHREINER", "ownedByDefault": false },
+        { "assetId": "EmoticonData_SEMO", "ownedByDefault": false },
+        { "assetId": "EmoticonData_SHENANDOAH", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Sheridan_Esports", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_ShieldUserMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_ShieldUserMasteryAnimated",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_Slippery_Rock_Esports",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_SoniiPepega", "ownedByDefault": false },
+        { "assetId": "EmoticonData_SoniiSalute", "ownedByDefault": false },
+        { "assetId": "EmoticonData_SPARTANS", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_SpeedySkirmisherMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_SpeedySkirmisherMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_SPIN", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_StalwartProtectorMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_StalwartProtectorMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_STARLEAGUE", "ownedByDefault": false },
+        { "assetId": "EmoticonData_STCLAIR", "ownedByDefault": false },
+        { "assetId": "EmoticonData_STEVENS", "ownedByDefault": false },
+        { "assetId": "EmoticonData_STOCKTON", "ownedByDefault": false },
+        { "assetId": "EmoticonData_STOUT", "ownedByDefault": false },
+        { "assetId": "EmoticonData_SUNYEMPIRE", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Sykkuno", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_T_Emoticon_WumpusFive",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_T_Emoticon_WumpusGoalie",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_T_Emoticon_WumpusStrike",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_TeamEDM", "ownedByDefault": false },
+        { "assetId": "EmoticonData_TeamRock", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Temple_Esports", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_TempoSniperMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_TempoSniperMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_TMU", "ownedByDefault": false },
+        { "assetId": "EmoticonData_TNTECH", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Tori", "ownedByDefault": false },
+        { "assetId": "EmoticonData_TRINE", "ownedByDefault": false },
+        { "assetId": "EmoticonData_TRITON", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Tuonto", "ownedByDefault": false },
+        { "assetId": "EmoticonData_TXST_Esports", "ownedByDefault": false },
+        { "assetId": "EmoticonData_UAB", "ownedByDefault": false },
+        { "assetId": "EmoticonData_UBC", "ownedByDefault": false },
+        { "assetId": "EmoticonData_UCF_Esports", "ownedByDefault": false },
+        { "assetId": "EmoticonData_UCSB", "ownedByDefault": false },
+        { "assetId": "EmoticonData_UHSP", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_UNC_Chapel_Hill_Esports",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_uOttawa_Esports", "ownedByDefault": false },
+        { "assetId": "EmoticonData_USM", "ownedByDefault": false },
+        { "assetId": "EmoticonData_UW_Stout_Esports", "ownedByDefault": false },
+        { "assetId": "EmoticonData_UWRF_Esports", "ownedByDefault": false },
+        { "assetId": "EmoticonData_Vienna", "ownedByDefault": false },
+        { "assetId": "EmoticonData_WAKE", "ownedByDefault": false },
+        { "assetId": "EmoticonData_WARTBURG", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Waterloo_Warriors",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_WEBER", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_WhipFighterMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "EmoticonData_WhipFighterMasteryAnimated",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_WICHITA", "ownedByDefault": false },
+        { "assetId": "EmoticonData_WILDCATS", "ownedByDefault": false },
+        {
+          "assetId": "EmoticonData_Winthrop_University",
+          "ownedByDefault": false
+        },
+        { "assetId": "EmoticonData_XGigachad", "ownedByDefault": false },
+        { "assetId": "EmoticonData_XRage", "ownedByDefault": false },
+        { "assetId": "EmoticonData_ZentaroDeadge", "ownedByDefault": false }
+      ]
+    },
+    {
+      "entitlementType": "GoalBorder",
+      "catalogEntries": [
+        {
+          "assetId": "GoalBorderData_AngelicSupportMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_ChaoticRocketeerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_CleverSummonerMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "GoalBorderData_Default", "ownedByDefault": true },
+        { "assetId": "GoalBorderData_EDMOniMastery", "ownedByDefault": false },
+        {
+          "assetId": "GoalBorderData_EmpoweringEnchanterMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_FlashySwordsmanMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_FlexibleBrawlerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_GravityMageMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "GoalBorderData_HealerMastery", "ownedByDefault": false },
+        {
+          "assetId": "GoalBorderData_HulkingBeastMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_MagicalPlaymakerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_ManipulatingMastermindMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_NimbleBlasterMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "GoalBorderData_RockOniMastery", "ownedByDefault": false },
+        {
+          "assetId": "GoalBorderData_ShieldUserMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_SpeedySkirmisherMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_StalwartProtectorMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_TempoSniperMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_UmbrellaUserMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalBorderData_WhipFighterMastery",
+          "ownedByDefault": false
+        }
+      ]
+    },
+    {
+      "entitlementType": "GoalExplosion",
+      "catalogEntries": [
+        {
+          "assetId": "GoalExplosionData_BasicRecolor",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalExplosionData_BasicRecolor2",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalExplosionData_BasicRecolor3",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalExplosionData_BasicRecolor4",
+          "ownedByDefault": true
+        },
+        { "assetId": "GoalExplosionData_Blobbo", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_Default", "ownedByDefault": true },
+        { "assetId": "GoalExplosionData_Fireworks", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_Forest", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_Founders", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_Glitch", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_Graffiti", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_Lightning", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_Music", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_Obscura", "ownedByDefault": false },
+        {
+          "assetId": "GoalExplosionData_OrbitalForce",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalExplosionData_OrbitalForceAurora",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "GoalExplosionData_OrbitalForceVoltaic",
+          "ownedByDefault": false
+        },
+        { "assetId": "GoalExplosionData_RainDrop", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_Ranked", "ownedByDefault": false },
+        {
+          "assetId": "GoalExplosionData_ThunderStrike",
+          "ownedByDefault": false
+        },
+        { "assetId": "GoalExplosionData_TKO", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_TKOGilded", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_TKORose", "ownedByDefault": false },
+        { "assetId": "GoalExplosionData_Underworld", "ownedByDefault": false }
+      ]
+    },
+    {
+      "entitlementType": "IdlePose",
+      "catalogEntries": [
+        {
+          "assetId": "IdlePoseData_AngelicSupportMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_ChaoticRocketeerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_CleverSummonerMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "IdlePoseData_EDMOniMastery", "ownedByDefault": false },
+        {
+          "assetId": "IdlePoseData_EmpoweringEnchanterMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_FlashySwordsmanMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_FlexibleBrawlerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_HulkingBeastMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_MagicalPlaymakerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_ManipulatingMastermindMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_NimbleBlasterMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "IdlePoseData_RockOniMastery", "ownedByDefault": false },
+        {
+          "assetId": "IdlePoseData_ShieldUserMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_SpeedySkirmisherMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_StalwartProtectorMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_TempoSniperMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "IdlePoseData_WhipFighterMastery",
+          "ownedByDefault": false
+        }
+      ]
+    },
+    {
+      "entitlementType": "Nameplate",
+      "catalogEntries": [
+        { "assetId": "NameplateData_AimiZentaro", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_AngelicSupportMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_AngelicSupportMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_AtlasLunaStars", "ownedByDefault": false },
+        { "assetId": "NameplateData_Basic", "ownedByDefault": true },
+        { "assetId": "NameplateData_BPS1A", "ownedByDefault": false },
+        { "assetId": "NameplateData_BPS1B", "ownedByDefault": false },
+        { "assetId": "NameplateData_BPS1C", "ownedByDefault": false },
+        { "assetId": "NameplateData_BPS1D", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_BPS1PremiumBundle",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_CafeJuno", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_ChaoticRocketeerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_ChaoticRocketeerMasteryPremium",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_CleverSummonerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_CleverSummonerMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_DrekarsFury", "ownedByDefault": false },
+        { "assetId": "NameplateData_Dyrus", "ownedByDefault": false },
+        { "assetId": "NameplateData_EDMOniMastery", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_EDMOniMasteryPremium",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_EmpoweringEnchanterMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_EmpoweringEnchanterMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_EraStalking", "ownedByDefault": false },
+        { "assetId": "NameplateData_FireworkShow", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_FlashySwordsmanMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_FlashySwordsmanMasteryPremium",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_FlexibleBrawlerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_FlexibleBrawlerMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_Hafu", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_HulkingBeastMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_HulkingBeastMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_HyperX", "ownedByDefault": false },
+        { "assetId": "NameplateData_IceCreamTime", "ownedByDefault": false },
+        { "assetId": "NameplateData_IKeepItTaco", "ownedByDefault": false },
+        { "assetId": "NameplateData_JulietteWarmUp", "ownedByDefault": false },
+        { "assetId": "NameplateData_KaisBarrage", "ownedByDefault": false },
+        { "assetId": "NameplateData_Lilypichu", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_MagicalPlaymakerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_MagicalPlaymakerMasteryPremium",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_ManipulatingMastermindMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_ManipulatingMastermindMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_Moistcritikal", "ownedByDefault": false },
+        { "assetId": "NameplateData_Music", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_NimbleBlasterMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_NimbleBlasterMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_OdyJuno", "ownedByDefault": false },
+        { "assetId": "NameplateData_Onimart", "ownedByDefault": false },
+        { "assetId": "NameplateData_Rakin", "ownedByDefault": false },
+        { "assetId": "NameplateData_Rayditz", "ownedByDefault": false },
+        { "assetId": "NameplateData_RockOniMastery", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_RockOniMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_S1RankedReward", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_ShieldUserMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_ShieldUserMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_Sonii", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_SpeedySkirmisherMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_SpeedySkirmisherMasteryPremium",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_StalwartProtectorMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_StalwartProtectorMasteryPremium",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_TempoSniperMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_TempoSniperMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_Tuonto", "ownedByDefault": false },
+        { "assetId": "NameplateData_Vienna", "ownedByDefault": false },
+        {
+          "assetId": "NameplateData_WhipFighterMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "NameplateData_WhipFighterMasteryPremium",
+          "ownedByDefault": false
+        },
+        { "assetId": "NameplateData_ZentarosBlade", "ownedByDefault": false }
+      ]
+    },
+    {
+      "entitlementType": "ProfileIcon",
+      "catalogEntries": [
+        { "assetId": "ProfileIconData_BPS1_Overtime", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_BPS1_SkyArena", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_BrawlerStyle1", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_Core", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_Core_18", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_Default", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_Default2", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_Default3", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_Default4", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_Founder", "ownedByDefault": false },
+        {
+          "assetId": "ProfileIconData_Juliette_Master",
+          "ownedByDefault": false
+        },
+        { "assetId": "ProfileIconData_KaiMaster", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_OdyInterative", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_S1Bronze", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_S1Challenger", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_S1Diamond", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_S1Gold", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_S1Omega", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_S1Platinum", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_S1Rookie", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_S1Silver", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_SniperStyle", "ownedByDefault": false },
+        { "assetId": "ProfileIconData_Stopwatch", "ownedByDefault": false }
+      ]
+    },
+    {
+      "entitlementType": "Skin",
+      "catalogEntries": [
+        { "assetId": "SD_AngelicSupport_Champion", "ownedByDefault": false },
+        { "assetId": "SD_AngelicSupport_Default", "ownedByDefault": true },
+        { "assetId": "SD_AngelicSupport_Music", "ownedByDefault": false },
+        { "assetId": "SD_ChaoticRocketeer_Default", "ownedByDefault": true },
+        { "assetId": "SD_ChaoticRocketeer_Orbital", "ownedByDefault": false },
+        {
+          "assetId": "SD_ChaoticRocketeer_OrbitalAurora",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "SD_ChaoticRocketeer_OrbitalVoltaic",
+          "ownedByDefault": false
+        },
+        { "assetId": "SD_ChaoticRocketeer_Wizard", "ownedByDefault": false },
+        { "assetId": "SD_CleverSummoner_Bee", "ownedByDefault": false },
+        { "assetId": "SD_CleverSummoner_Cafe", "ownedByDefault": false },
+        { "assetId": "SD_CleverSummoner_Default", "ownedByDefault": true },
+        { "assetId": "SD_Deadge_Default", "ownedByDefault": false },
+        { "assetId": "SD_EDMOni_Default", "ownedByDefault": true },
+        { "assetId": "SD_EmpoweringEnchanter_Default", "ownedByDefault": true },
+        {
+          "assetId": "SD_EmpoweringEnchanter_Raindrop",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "SD_EmpoweringEnchanter_Vampiress",
+          "ownedByDefault": false
+        },
+        { "assetId": "SD_FlashySwordsman_Default", "ownedByDefault": true },
+        { "assetId": "SD_FlexibleBrawler_Brazil", "ownedByDefault": false },
+        { "assetId": "SD_FlexibleBrawler_Default", "ownedByDefault": true },
+        { "assetId": "SD_FlexibleBrawler_Founders", "ownedByDefault": false },
+        { "assetId": "SD_HulkingBeast_Default", "ownedByDefault": true },
+        { "assetId": "SD_HulkingBeast_XKO", "ownedByDefault": false },
+        { "assetId": "SD_HulkingBeast_XKO_Gilded", "ownedByDefault": false },
+        { "assetId": "SD_HulkingBeast_XKO_Rose", "ownedByDefault": false },
+        { "assetId": "SD_MagicalPlaymaker_Default", "ownedByDefault": true },
+        { "assetId": "SD_MagicalPlaymaker_Music", "ownedByDefault": false },
+        { "assetId": "SD_MagicalPlaymaker_SchoolGirl", "ownedByDefault": true },
+        {
+          "assetId": "SD_ManipulatingMastermind_Default",
+          "ownedByDefault": true
+        },
+        {
+          "assetId": "SD_ManipulatingMastermind_StreetArtist",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "SD_ManipulatingMastermind_StreetArtist_Neon",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "SD_ManipulatingMastermind_StreetArtist_Sakura",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "SD_ManipulatingMastermind_Yokai",
+          "ownedByDefault": false
+        },
+        { "assetId": "SD_NimbleBlaster_Default", "ownedByDefault": true },
+        { "assetId": "SD_NimbleBlaster_Fire", "ownedByDefault": false },
+        { "assetId": "SD_NimbleBlaster_Hitman", "ownedByDefault": false },
+        { "assetId": "SD_RockOni_Default", "ownedByDefault": true },
+        { "assetId": "SD_ShieldUser_Default", "ownedByDefault": true },
+        { "assetId": "SD_ShieldUser_Moist", "ownedByDefault": false },
+        { "assetId": "SD_SpeedySkirmisher_Default", "ownedByDefault": true },
+        { "assetId": "SD_SpeedySkirmisher_Music", "ownedByDefault": false },
+        {
+          "assetId": "SD_SpeedySkirmisher_Underworld",
+          "ownedByDefault": false
+        },
+        { "assetId": "SD_StalwartProtector_Default", "ownedByDefault": true },
+        { "assetId": "SD_StalwartProtector_Ghost", "ownedByDefault": false },
+        { "assetId": "SD_StalwartProtector_Pink", "ownedByDefault": false },
+        { "assetId": "SD_StalwartProtector_Tiger", "ownedByDefault": false },
+        { "assetId": "SD_TempoSniper_Default", "ownedByDefault": true },
+        { "assetId": "SD_TempoSniper_Nurse", "ownedByDefault": false },
+        { "assetId": "SD_TempoSniper_Orbital", "ownedByDefault": false },
+        { "assetId": "SD_WhipFighter_Default", "ownedByDefault": true },
+        { "assetId": "SD_Zip_Default", "ownedByDefault": false }
+      ]
+    },
+    {
+      "entitlementType": "Title",
+      "catalogEntries": [
+        { "assetId": "TitleData_Abandoned", "ownedByDefault": false },
+        { "assetId": "TitleData_Aesop", "ownedByDefault": false },
+        {
+          "assetId": "TitleData_AngelicSupportMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "TitleData_BetaReward", "ownedByDefault": false },
+        { "assetId": "TitleData_BPS1Investor", "ownedByDefault": false },
+        { "assetId": "TitleData_BPS1Striker", "ownedByDefault": false },
+        { "assetId": "TitleData_BPS2Hotshot", "ownedByDefault": false },
+        { "assetId": "TitleData_BPS2Striker", "ownedByDefault": false },
+        { "assetId": "TitleData_BuiltDifferent", "ownedByDefault": false },
+        {
+          "assetId": "TitleData_ChaoticRocketeerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "TitleData_CleverSummonerMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "TitleData_Competitor", "ownedByDefault": false },
+        { "assetId": "TitleData_Cracked", "ownedByDefault": false },
+        { "assetId": "TitleData_Cringe", "ownedByDefault": false },
+        { "assetId": "TitleData_EDMOniMastery", "ownedByDefault": false },
+        {
+          "assetId": "TitleData_EmpoweringEnchanterMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "TitleData_FlashySwordsmanMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "TitleData_FlexibleBrawlerMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "TitleData_Founder", "ownedByDefault": false },
+        { "assetId": "TitleData_GravityMageMastery", "ownedByDefault": false },
+        { "assetId": "TitleData_Halloween_Pumpkin", "ownedByDefault": false },
+        { "assetId": "TitleData_Halloween_Spooky", "ownedByDefault": false },
+        { "assetId": "TitleData_HulkingBeastMastery", "ownedByDefault": false },
+        { "assetId": "TitleData_HyperX", "ownedByDefault": false },
+        { "assetId": "TitleData_Idol", "ownedByDefault": false },
+        { "assetId": "TitleData_KOChamp", "ownedByDefault": false },
+        {
+          "assetId": "TitleData_MagicalPlaymakerMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "TitleData_ManipulatingMastermindMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "TitleData_MasterBrawler", "ownedByDefault": false },
+        { "assetId": "TitleData_MasterSniper", "ownedByDefault": false },
+        {
+          "assetId": "TitleData_NimbleBlasterMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "TitleData_Performer", "ownedByDefault": false },
+        { "assetId": "TitleData_RiseandGrind", "ownedByDefault": false },
+        { "assetId": "TitleData_RockOniMastery", "ownedByDefault": false },
+        { "assetId": "TitleData_S1Champion", "ownedByDefault": false },
+        {
+          "assetId": "TitleData_S1TournamentChampion",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "TitleData_S1TournamentFlawless",
+          "ownedByDefault": false
+        },
+        { "assetId": "TitleData_S1TournamentLegend", "ownedByDefault": false },
+        { "assetId": "TitleData_S1TournamentWarrior", "ownedByDefault": false },
+        { "assetId": "TitleData_S1TournamentWinner", "ownedByDefault": false },
+        { "assetId": "TitleData_ScalingForLateGame", "ownedByDefault": false },
+        { "assetId": "TitleData_ShieldUserMastery", "ownedByDefault": false },
+        { "assetId": "TitleData_SigmaStriker", "ownedByDefault": false },
+        {
+          "assetId": "TitleData_SpeedySkirmisherMastery",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "TitleData_StalwartProtectorMastery",
+          "ownedByDefault": false
+        },
+        { "assetId": "TitleData_Striker", "ownedByDefault": false },
+        { "assetId": "TitleData_TempoSniperMastery", "ownedByDefault": false },
+        {
+          "assetId": "TitleData_TournamentShadowHelper",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "TitleData_TournamentShadowHero",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "TitleData_TournamentShadowLoser",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "TitleData_TournamentShadowSelfless",
+          "ownedByDefault": false
+        },
+        {
+          "assetId": "TitleData_TournamentShadowWarrior",
+          "ownedByDefault": false
+        },
+        { "assetId": "TitleData_Trailblazer", "ownedByDefault": false },
+        { "assetId": "TitleData_WhipFighterMastery", "ownedByDefault": false }
+      ]
+    },
+    {
+      "entitlementType": "Training",
+      "catalogEntries": [
+        { "assetId": "TD_AvoidDamageHitHarder", "ownedByDefault": true },
+        { "assetId": "TD_BuffAndDebuffDuration", "ownedByDefault": true },
+        { "assetId": "TD_ComboATarget", "ownedByDefault": true },
+        { "assetId": "TD_CreationLifeTime", "ownedByDefault": true },
+        { "assetId": "TD_CreationSize", "ownedByDefault": true },
+        { "assetId": "TD_CreationSize_disabled", "ownedByDefault": true },
+        { "assetId": "TD_CreationSizeLifeTime", "ownedByDefault": true },
+        { "assetId": "TD_DistancePower", "ownedByDefault": true },
+        { "assetId": "TD_EmpoweredHitsBuff", "ownedByDefault": true },
+        { "assetId": "TD_FasterDashes", "ownedByDefault": true },
+        { "assetId": "TD_FasterProjectiles", "ownedByDefault": true },
+        { "assetId": "TD_GainRampingSpeed", "ownedByDefault": true },
+        { "assetId": "TD_GoalArcPower", "ownedByDefault": true },
+        { "assetId": "TD_HitCoreGainCDR", "ownedByDefault": true },
+        { "assetId": "TD_HitEnemyBurnThem", "ownedByDefault": true },
+        { "assetId": "TD_HitRockCooldown", "ownedByDefault": true },
+        { "assetId": "TD_HitsIncreaseSpeedAndPower", "ownedByDefault": true },
+        { "assetId": "TD_HitsReduceCooldowns", "ownedByDefault": true },
+        {
+          "assetId": "TD_HitStaggerEnemyCooldownReduction",
+          "ownedByDefault": true
+        },
+        {
+          "assetId": "TD_IncreasedPowerWithMaxStagger",
+          "ownedByDefault": true
+        },
+        { "assetId": "TD_IncreasedSpeedWithStagger", "ownedByDefault": true },
+        { "assetId": "TD_KnockAnythingRecoverStagger", "ownedByDefault": true },
+        { "assetId": "TD_KOKing", "ownedByDefault": true },
+        { "assetId": "TD_MaxStaggerIncrease", "ownedByDefault": true },
+        { "assetId": "TD_MovementAbilitiesTeleport", "ownedByDefault": true },
+        { "assetId": "TD_MovementAbilityCharges", "ownedByDefault": true },
+        { "assetId": "TD_MultiHitsReduceCooldowns", "ownedByDefault": true },
+        {
+          "assetId": "TD_PrimaryAbilityCooldownReduction",
+          "ownedByDefault": true
+        },
+        { "assetId": "TD_PrimaryEcho", "ownedByDefault": true },
+        { "assetId": "TD_RangedStrike", "ownedByDefault": true },
+        { "assetId": "TD_SizeIncrease", "ownedByDefault": true },
+        { "assetId": "TD_SpecialCooldownAfterRounds", "ownedByDefault": true },
+        { "assetId": "TD_StrikeRockSpeedUp", "ownedByDefault": true },
+        { "assetId": "TD_TakeDownReduceCooldowns", "ownedByDefault": true },
+        { "assetId": "TD_TrapMaster", "ownedByDefault": true }
+      ]
+    }
+  ]
+}
