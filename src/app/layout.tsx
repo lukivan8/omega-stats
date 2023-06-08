@@ -19,7 +19,7 @@ export default function RootLayout({
         {children}
         <footer className="h-20">
           <div className=" bg-gray-900 fixed bottom-0 w-full">
-            <p className="text-white mx-auto w-1/2 text-center">
+            <p className="text-white text-sm sm:text-base mx-auto w-1/2 text-center">
               This website was created by{" "}
               <a className="underline" href="https://github.com/LukIvan8">
                 Lukov Ivan
