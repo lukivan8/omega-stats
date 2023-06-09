@@ -1,26 +1,21 @@
 "use client";
 
-import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
-async function handleSuggest() {}
-
-export default async function SearchBar() {
+export default function SearchBar() {
   const [nickname, setNickname] = useState("");
   const server = "global";
   const path = usePathname();
-  const suggestList = [];
 
   return (
     <form>
       <div className="flex gap-2 justify-center items-stretch h-8 md:h-auto ">
         <input
-          onChange={async (e) => {
+          onChange={(e) => {
             setNickname(e.target.value);
-            const res = await axios.get("/api/users?username=" + nickname);
           }}
           className="bg-black border-solid border text-sm md:text-lg border-white px-1 text-white rounded focus:outline-none md:p-2 sm:w-full w-1/2"
         />
