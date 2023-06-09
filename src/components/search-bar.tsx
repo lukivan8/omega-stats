@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
-export default function SearchBar() {
+export default function SearchBar({ mainPage }: { mainPage?: boolean }) {
   const [nickname, setNickname] = useState("");
   const server = "global";
   const path = usePathname();
@@ -17,7 +17,7 @@ export default function SearchBar() {
           onChange={(e) => {
             setNickname(e.target.value);
           }}
-          className="bg-black border-solid border text-sm md:text-lg border-white px-1 text-white rounded focus:outline-none md:p-2 sm:w-full w-1/2"
+          className="bg-black border-solid border text-sm md:text-base border-white px-1 text-white rounded focus:outline-none md:p-2 w-[80%] "
         />
         <Link href={nickname !== "" ? "/" + server + "/" + nickname : path}>
           <button
@@ -35,8 +35,8 @@ export default function SearchBar() {
               src="/icons/lens.svg"
               className="hidden md:block"
               alt={"go"}
-              width={50}
-              height={50}
+              width={24}
+              height={24}
             />
           </button>
         </Link>
