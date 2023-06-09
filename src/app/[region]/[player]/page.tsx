@@ -54,8 +54,11 @@ export default async function UserPage({
                 <div className="basis-1/5 ">
                   <p className="sm:block hidden">Character</p>
                 </div>
-                <p className="basis-[15%] sm:text-base text-sm">Level</p>
-                <p className="basis-1/5 sm:text-base text-sm">Total</p>
+
+                <p className="basis-[15%] sm:text-base text-sm text-center">
+                  Level
+                </p>
+                <p className="basis-1/5 sm:text-base text-sm">Total XP</p>
                 <p className="basis-[25%] sm:text-base text-sm">Progress</p>
                 <div className="basis-1/5 flex justify-center">
                   <p className="self-end sm:text-base text-sm">Collected</p>

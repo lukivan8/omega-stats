@@ -41,11 +41,13 @@ export default function MasteryItem({
             {validCharName[0].toUpperCase() + validCharName.slice(1)}
           </p>
         </div>
-        <div className="basis-[15%]">
+        <div className="basis-[15%] flex justify-center">
           <p className="sm:text-lg text-sm">{currentTier}</p>
         </div>
 
-        <p className="basis-1/5  sm:text-lg text-sm">{totalXp}</p>
+        <p className="basis-1/5 sm:text-lg text-sm">
+          {totalXp.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </p>
         <div className="basis-[25%]">
           {isNaN(progress) ? (
             <Image alt="ok" src="/icons/star.svg" width={32} height={32} />

@@ -8,6 +8,7 @@ import { regions } from "./utils/regions";
 import {
   Leaderboard,
   LevelData,
+  PlayerData,
   RankedPlayerData,
   StrikerMastery,
 } from "./utils/dto";
@@ -78,13 +79,20 @@ export default class OmegaStrikers {
     return res;
   }
 
-  async player(playerName: string): Promise<RankedPlayerData> {
+  async player(playerName: string): Promise<PlayerData> {
     const { data } = await this.instance.get(
       `/v1/players?usernameQuery=${playerName}`
     );
     if (data.matches.length == 0) throw new OSError("Player not found.");
     const res = data.matches[0];
     return res;
+  }
+
+  async matchingPlayers(name: string): Promise<PlayerData[]> {
+    const { data } = await this.instance.get(
+      `/v1/players?usernameQuery=${name}`
+    );
+    return data.matches;
   }
 
   // < Show Profile (Ranked) >
