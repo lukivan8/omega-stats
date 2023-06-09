@@ -45,7 +45,7 @@ export default function MasteryItem({
           <p className="sm:text-lg text-sm">{currentTier}</p>
         </div>
 
-        <p className="basis-1/5  sm:text-lg text-sm bg-gray-950">{totalXp}</p>
+        <p className="basis-1/5  sm:text-lg text-sm">{totalXp}</p>
         <div className="basis-[25%]">
           {isNaN(progress) ? (
             <Image alt="ok" src="/icons/star.svg" width={32} height={32} />
