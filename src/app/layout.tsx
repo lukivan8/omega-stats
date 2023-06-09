@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <footer className="h-20">
-          <div className=" bg-gray-900 fixed bottom-0 w-full">
+          <div className=" bg-gray-950 fixed bottom-0 w-full">
             <p className="text-white text-sm sm:text-base mx-auto w-1/2 text-center">
               This website was created by{" "}
               <a className="underline" href="https://github.com/LukIvan8">

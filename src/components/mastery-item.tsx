@@ -42,34 +42,35 @@ export default function MasteryItem({
           </p>
         </div>
         <div className="basis-[15%]">
-          <p className=" sm:text-base text-sm">{currentTier}</p>
+          <p className="sm:text-lg text-sm">{currentTier}</p>
         </div>
 
-        <p className="basis-1/5  sm:text-base text-sm">{totalXp}</p>
+        <p className="basis-1/5  sm:text-lg text-sm bg-gray-950">{totalXp}</p>
         <div className="basis-[25%]">
           {isNaN(progress) ? (
-            <Image alt="ok" src="/star.svg" width={32} height={32} />
+            <Image alt="ok" src="/icons/star.svg" width={32} height={32} />
           ) : (
             <>
               <p className="hidden sm:block">
                 {currentTierXp}/{xpToNextTier}
               </p>
               <ProgressBar
-                baseBgColor="#000"
+                baseBgColor="rgb(3, 7, ,18)"
                 bgColor="#fff"
-                className="sm:w-3/4 w-full"
+                className="sm:w-3/4 w-full border border-gray-500 rounded-[2rem]"
                 height="10px"
                 completed={progress}
                 customLabel=" "
+                animateOnRender
               />
             </>
           )}
         </div>
         <div className="basis-1/5 flex justify-center">
           {collected ? (
-            <Image alt="ok" src="/done.svg" width={32} height={32} />
+            <Image alt="ok" src="/icons/done.svg" width={32} height={32} />
           ) : (
-            <Image alt="not" src="/cross.svg" width={32} height={32} />
+            <Image alt="not" src="/icons/cross.svg" width={32} height={32} />
           )}
         </div>
       </div>

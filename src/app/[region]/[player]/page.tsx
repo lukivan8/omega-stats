@@ -2,7 +2,13 @@ import Image from "next/image";
 import MasteryItem from "@/components/mastery-item";
 import React from "react";
 import { os } from "@/constants/api";
-import Link from "next/link";
+import SearchBar from "@/components/search-bar";
+import Navbar from "@/components/navbar";
+import { NotFound, UnexpectedError } from "@/components/error-page";
+
+type PropType = {
+  params: { region: string; player: string };
+};
 
 async function fetchMastery(player: string) {
   try {
@@ -27,29 +33,24 @@ async function fetchPlayer(player: string) {
 
 export default async function UserPage({
   params: { region, player },
-}: {
-  params: { region: string; player: string };
-}) {
+}: PropType) {
   const masteryData = await fetchMastery(player);
   const playerData = await fetchPlayer(player);
 
   //TODO: Красивый хэдер с карточкой
-  //TODO: Исправить ошибку при переходе на несуществующего игрока
+
   if (typeof masteryData !== "string" && typeof playerData !== "string") {
     return (
       <div>
-        <Link href={"/"} className="flex items-center md:absolute m-4 left-4">
-          <Image width={40} height={40} src={"/back.svg"} alt={"404"} />
-        </Link>
-        <div className="sm:w-1/2 w-full mx-auto flex justify-center my-6 gap-6">
+        <div className="sm:w-1/2 w-full mx-auto flex justify-center mb-6 gap-6">
           <h2 className="sm:text-6xl text-[2.7rem] font-bold">
             {playerData.username}
           </h2>
         </div>
         {masteryData[0] !== undefined ? (
           <div className="w-full flex justify-center">
-            <div className="xl:w-1/2 md:w-3/4 w-full flex flex-col divide-y bg-stone-800 rounded-lg">
-              <div className="flex bg-stone-300 text-black md:px-4 rounded-t-lg py-1 px-3">
+            <div className="xl:w-1/2 md:w-3/4 w-full flex flex-col divide-y bg-black ">
+              <div className="flex bg-gray-200 text-black  md:px-4 md:rounded-t-lg py-1 px-3">
                 <div className="basis-1/5 ">
                   <p className="sm:block hidden">Character</p>
                 </div>
@@ -75,42 +76,8 @@ export default async function UserPage({
       </div>
     );
   } else if (playerData === "Error: Player not found.") {
-    return (
-      <div>
-        <Link href={"/"} className="flex items-center absolute left-4 top-10">
-          <Image width={40} height={40} src={"/back.svg"} alt={"404"} />
-        </Link>
-        <div className="flex flex-col md:flex-row w-full justify-center md:h-[90vh] h-screen items-center gap-10">
-          <Image
-            width={200}
-            height={200}
-            src={"/emoticons/drekar_what.png"}
-            alt={"404"}
-          />
-          <p className="xl:text-6xl md:text-4xl text-3xl">
-            This player doesn&apos;t exist
-          </p>
-        </div>
-      </div>
-    );
+    return <NotFound username={player} />;
   } else {
-    return (
-      <div>
-        <Link href={"/"} className="flex items-center absolute left-4 top-10">
-          <Image width={40} height={40} src={"/back.svg"} alt={"404"} />
-        </Link>
-        <div className="flex flex-col md:flex-row w-full justify-center md:h-[90vh] h-screen items-center gap-10">
-          <Image
-            width={200}
-            height={200}
-            src={"/emoticons/dubu-shock.png"}
-            alt={"error"}
-          />
-          <p className="xl:text-6xl md:text-4xl text-3xl">
-            Unexpected error occured
-          </p>
-        </div>
-      </div>
-    );
+    return <UnexpectedError />;
   }
 }
