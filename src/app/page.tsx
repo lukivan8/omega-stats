@@ -8,7 +8,7 @@ export default function Page() {
     <div className="h-[90vh] flex items-center justify-center">
       <div className="flex flex-col items-center gap-5">
         <h1 className="text-[2.7rem] sm:text-6xl font-bold">Omega Stats</h1>
-        <SearchBar mainPage />
+        <SearchBar />
         {/* <button className="bg-gray-800 p-2 rounded">
           <Link href={"/leaderboard"} >Leaderboard</Link>
         </button> */}
