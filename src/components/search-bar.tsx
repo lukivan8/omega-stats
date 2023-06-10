@@ -1,35 +1,56 @@
 "use client";
 
+import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Autocomplete from "./autocomplete";
+import debounce from "lodash.debounce";
+import { PlayerData } from "@/lib/utils/dto";
 
-export default function SearchBar({ mainPage }: { mainPage?: boolean }) {
-  const [nickname, setNickname] = useState("");
+export default function SearchBar() {
   const server = "global";
   const path = usePathname();
+  const [inputValue, setInputValue] = useState("");
+  const [suggestions, setSuggestions] = useState<PlayerData[]>([]);
+
+  const handleInputChange = (e: any) => {
+    const input = e.target.value;
+    setInputValue(input);
+    axios
+      .get<{ res: PlayerData[] }>("/api/users?username=" + input)
+      .then((r) => {
+        setSuggestions(r.data.res.slice(0, 5));
+      })
+      .catch((e) => {});
+  };
+
+  const handleSuggestionClick = (suggestion: PlayerData) => {
+    setInputValue(suggestion.username);
+    setSuggestions([]);
+  };
 
   return (
     <form>
       <div className="flex gap-2 justify-center items-stretch h-8 md:h-auto ">
-        <input
-          onChange={(e) => {
-            setNickname(e.target.value);
-          }}
-          className="bg-black border-solid border text-sm md:text-base border-white px-1 text-white rounded focus:outline-none md:p-2 w-[80%] "
+        <Autocomplete
+          inputChange={handleInputChange}
+          suggestionClick={handleSuggestionClick}
+          inputValue={inputValue}
+          suggestions={suggestions}
         />
-        <Link href={nickname !== "" ? "/" + server + "/" + nickname : path}>
+        <Link href={inputValue !== "" ? "/" + server + "/" + inputValue : path}>
           <button
+            className="bg-black border-solid border border-white p-2 rounded font-bold"
             type="submit"
-            className="bg-black border-solid border border-white md:p-2 px-2 py-1 rounded font-bold"
           >
             <Image
               src="/icons/lens.svg"
-              className="h-full md:hidden"
+              className="md:hidden"
               alt={"go"}
-              width={22}
-              height={22}
+              width={20}
+              height={20}
             />
             <Image
               src="/icons/lens.svg"

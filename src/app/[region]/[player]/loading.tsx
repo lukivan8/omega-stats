@@ -9,6 +9,7 @@ export default function Loading() {
         alt={"Loading"}
         width={400}
         height={400}
+        fetchPriority="high"
       />
     </div>
   );
