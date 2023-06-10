@@ -65,7 +65,7 @@ export interface PlayerRankedData {
   topRole: string;
   rating: number;
   mostPlayedCharacters: CharacterData[];
-  currentDivisionId: "WORLD";
+  currentDivisionId: string;
   progressToNext: 0;
 }
 

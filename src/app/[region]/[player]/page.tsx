@@ -1,10 +1,7 @@
-import Image from "next/image";
-import MasteryItem from "@/components/mastery-item";
 import React from "react";
 import { os } from "@/constants/api";
-import SearchBar from "@/components/search-bar";
-import Navbar from "@/components/navbar";
 import { NotFound, UnexpectedError } from "@/components/error-page";
+import User from "@/components/user";
 
 type PropType = {
   params: { region: string; player: string };
@@ -31,11 +28,22 @@ async function fetchPlayer(player: string) {
   }
 }
 
+async function fetchRanked(playerName: string, region: string) {
+  try {
+    let data = await os.ranked(playerName, region);
+    return data;
+  } catch (e) {
+    return `${e}`;
+  }
+}
+
 export default async function UserPage({
   params: { region, player },
 }: PropType) {
   const masteryData = await fetchMastery(player);
   const playerData = await fetchPlayer(player);
+  const rankedData = await fetchRanked(player, region);
+  console.log(rankedData);
 
   //TODO: Красивый хэдер с карточкой
 
@@ -47,35 +55,7 @@ export default async function UserPage({
             {playerData.username}
           </h2>
         </div>
-        {masteryData[0] !== undefined ? (
-          <div className="w-full flex justify-center">
-            <div className="xl:w-1/2 md:w-3/4 w-full flex flex-col divide-y bg-black ">
-              <div className="flex bg-gray-200 text-black  md:px-4 md:rounded-t-lg py-1 px-3">
-                <div className="basis-1/5 ">
-                  <p className="sm:block hidden">Character</p>
-                </div>
-
-                <p className="basis-[15%] sm:text-base text-sm text-center">
-                  Level
-                </p>
-                <p className="basis-1/5 sm:text-base text-sm">Total XP</p>
-                <p className="basis-[25%] sm:text-base text-sm">Progress</p>
-                <div className="basis-1/5 flex justify-center">
-                  <p className="self-end sm:text-base text-sm">Collected</p>
-                </div>
-              </div>
-              {masteryData.map((item, i) =>
-                item.characterAssetName !== "" ? (
-                  <MasteryItem {...item} key={i} />
-                ) : null
-              )}
-            </div>
-          </div>
-        ) : (
-          <div className="w-full flex justify-center">
-            <p className="text-xl">This player has no games played</p>
-          </div>
-        )}
+        <User masteryData={masteryData} rankedData={rankedData} />
       </div>
     );
   } else if (playerData === "Error: Player not found.") {
