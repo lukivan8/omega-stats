@@ -4,12 +4,11 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
-import Autocomplete from "./autocomplete";
-import debounce from "lodash.debounce";
+import React, { useState } from "react";
+
 import { PlayerData } from "@/lib/utils/dto";
 
-export default function SearchBar() {
+export default function SearchBar({ mainPage }: { mainPage?: boolean }) {
   const server = "global";
   const path = usePathname();
   const [inputValue, setInputValue] = useState("");
@@ -40,7 +39,7 @@ export default function SearchBar() {
             value={inputValue}
             onChange={handleInputChange}
             className="text-base bg-base-100 border-white px-1 rounded w-full focus:outline-none md:p-2"
-            placeholder="Username"
+            placeholder={mainPage ? "Username | ex: Bells" : "Username"}
           />
           <Link
             className="text-xs"

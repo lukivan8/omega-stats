@@ -10,7 +10,7 @@ export default function Page() {
         <h1 className="text-[2.7rem] sm:text-6xl font-bold text-primary-content">
           Ωmega Stats
         </h1>
-        <SearchBar />
+        <SearchBar mainPage />
         {/* <button className="bg-gray-800 p-2 rounded">
           <Link href={"/leaderboard"} >Leaderboard</Link>
         </button> */}
