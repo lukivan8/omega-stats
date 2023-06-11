@@ -17,6 +17,11 @@ function validateCharName(charName: string): string {
   }
 }
 
+const charNameExceptions = {
+  Aimi: "Ai.Mi",
+  Drekar: "Drek'ar",
+};
+
 export default function MasteryItem({
   characterAssetName,
   currentTier,
@@ -29,6 +34,11 @@ export default function MasteryItem({
   const validCharName = validateCharName(characterAssetName);
   const progress = Math.round((currentTierXp / xpToNextTier) * 100);
   const collected = currentTier - idxHighestTierCollected === 1;
+  let displayName = validCharName[0].toUpperCase() + validCharName.slice(1);
+  if (displayName in charNameExceptions) {
+    displayName =
+      charNameExceptions[displayName as keyof typeof charNameExceptions];
+  }
 
   if (validCharName !== "") {
     return (
@@ -40,9 +50,7 @@ export default function MasteryItem({
             src={"/omega-characters/" + validCharName + ".png"}
             alt={validCharName}
           />
-          <p className="sm:text-base text-sm">
-            {validCharName[0].toUpperCase() + validCharName.slice(1)}
-          </p>
+          <p className="sm:text-base text-sm">{displayName}</p>
         </div>
         <div className="basis-[15%] flex justify-center">
           <p className="sm:text-lg text-sm">{currentTier}</p>
@@ -69,7 +77,7 @@ export default function MasteryItem({
                 animateOnRender
               /> */}
               <progress
-                className="progress progress-accent"
+                className="progress progress-accent rounded"
                 max={100}
                 value={progress}
               />
