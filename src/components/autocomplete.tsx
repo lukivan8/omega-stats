@@ -9,7 +9,7 @@ type PropType = {
   inputChange: (event: ChangeEvent<HTMLInputElement>) => void;
   suggestions: PlayerData[];
   suggestionClick: Function;
-  styles:string;
+  styles: string;
 };
 
 const Autocomplete = ({
@@ -17,25 +17,27 @@ const Autocomplete = ({
   inputChange,
   suggestions,
   suggestionClick,
-  styles
+  styles,
 }: PropType) => {
   const [focused, setFocused] = useState(false);
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="relative ">
-      <input
-        value={inputValue}
-        onChange={inputChange}
-        onFocus={() => {
-          setFocused(true);
-        }}
-        onBlur={() => {
-          setFocused(false);
-        }}
-        className={styles}
-        placeholder="Username"
-      />
+    <>
+      <div className="relative ">
+        <input
+          value={inputValue}
+          onChange={inputChange}
+          onFocus={() => {
+            setFocused(true);
+          }}
+          onBlur={() => {
+            setFocused(false);
+          }}
+          className={styles}
+          placeholder="Username"
+        />
+      </div>
       {suggestions.length > 0 && (focused || !hovered) && (
         <ul
           onMouseOver={() => {
@@ -44,7 +46,7 @@ const Autocomplete = ({
           onMouseDown={() => {
             setHovered(false);
           }}
-          className="absolute w-full mt-3 py-2 bg-black rounded-lg shadow-lg"
+          className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52"
         >
           {suggestions.map((suggestion, index) => (
             <li
@@ -57,7 +59,7 @@ const Autocomplete = ({
           ))}
         </ul>
       )}
-    </div>
+    </>
   );
 };
 

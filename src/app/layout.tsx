@@ -14,18 +14,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {children}
-        <footer className="h-20">
-          <div className=" bg-gray-950 fixed bottom-0 w-full">
-            <p className="text-white text-sm sm:text-base mx-auto w-1/2 text-center">
-              This website was created by{" "}
-              <a className="underline" href="https://github.com/LukIvan8">
-                Lukov Ivan
-              </a>
-            </p>
-          </div>
+    <html lang="en" data-theme="black">
+      <body className="min-h-screen relative">
+        <div className="p-8">{children}</div>
+
+        <footer className="footer footer-center absolute bottom-0 w-full h-8 bg-base-300 text-base-content">
+          <p className="text-sm w-full text-center inline">
+            This website was created by{" "}
+            <a className="underline" href="https://github.com/LukIvan8">
+              Lukov Ivan
+            </a>
+          </p>
         </footer>
       </body>
     </html>

@@ -43,7 +43,6 @@ export default async function UserPage({
   const masteryData = await fetchMastery(player);
   const playerData = await fetchPlayer(player);
   const rankedData = await fetchRanked(player, region);
-  console.log(rankedData);
 
   //TODO: Красивый хэдер с карточкой
 
@@ -51,7 +50,7 @@ export default async function UserPage({
     return (
       <div>
         <div className="sm:w-1/2 w-full mx-auto flex justify-center mb-6 gap-6">
-          <h2 className="sm:text-6xl text-[2.7rem] font-bold">
+          <h2 className="sm:text-6xl text-[2.7rem] font-bold text-primary-content">
             {playerData.username}
           </h2>
         </div>
