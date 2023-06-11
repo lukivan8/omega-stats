@@ -9,6 +9,7 @@ type PropType = {
   inputChange: (event: ChangeEvent<HTMLInputElement>) => void;
   suggestions: PlayerData[];
   suggestionClick: Function;
+  styles:string;
 };
 
 const Autocomplete = ({
@@ -16,6 +17,7 @@ const Autocomplete = ({
   inputChange,
   suggestions,
   suggestionClick,
+  styles
 }: PropType) => {
   const [focused, setFocused] = useState(false);
   const [hovered, setHovered] = useState(false);
@@ -31,7 +33,8 @@ const Autocomplete = ({
         onBlur={() => {
           setFocused(false);
         }}
-        className="bg-black border-solid border text-sm md:text-base border-white px-1 p-2 text-white rounded focus:outline-none md:p-2 "
+        className={styles}
+        placeholder="Username"
       />
       {suggestions.length > 0 && (focused || !hovered) && (
         <ul
@@ -41,13 +44,13 @@ const Autocomplete = ({
           onMouseDown={() => {
             setHovered(false);
           }}
-          className="absolute w-full mt-1 py-2 bg-black border border-gray-300 rounded-lg shadow-lg"
+          className="absolute w-full mt-3 py-2 bg-black rounded-lg shadow-lg"
         >
           {suggestions.map((suggestion, index) => (
             <li
               key={index}
               onClick={() => suggestionClick(suggestion)}
-              className="px-4 py-2 cursor-pointer hover:bg-gray-900 text-ellipsis"
+              className="px-2 py-2 cursor-pointer text-ellipsis hover:underline"
             >
               {suggestion.username}
             </li>

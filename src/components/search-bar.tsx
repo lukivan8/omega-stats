@@ -33,31 +33,23 @@ export default function SearchBar() {
 
   return (
     <form>
-      <div className="flex gap-2 justify-center items-stretch h-8 md:h-auto ">
+      <div className="flex w-full justify-center border rounded items-center py-1 px-2 ">
         <Autocomplete
           inputChange={handleInputChange}
           suggestionClick={handleSuggestionClick}
           inputValue={inputValue}
           suggestions={suggestions}
+          styles="bg-black text-base border-white px-1 text-white rounded w-full focus:outline-none md:p-2 "
         />
         <Link href={inputValue !== "" ? "/" + server + "/" + inputValue : path}>
           <button
-            className="bg-black border-solid border border-white p-2 rounded font-bold"
             type="submit"
           >
             <Image
               src="/icons/lens.svg"
-              className="md:hidden"
               alt={"go"}
-              width={20}
-              height={20}
-            />
-            <Image
-              src="/icons/lens.svg"
-              className="hidden md:block"
-              alt={"go"}
-              width={24}
-              height={24}
+              width={22}
+              height={22}
             />
           </button>
         </Link>
