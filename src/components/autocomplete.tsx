@@ -9,6 +9,7 @@ type PropType = {
   inputChange: (event: ChangeEvent<HTMLInputElement>) => void;
   suggestions: PlayerData[];
   suggestionClick: Function;
+  styles: string;
 };
 
 const Autocomplete = ({
@@ -16,23 +17,27 @@ const Autocomplete = ({
   inputChange,
   suggestions,
   suggestionClick,
+  styles,
 }: PropType) => {
   const [focused, setFocused] = useState(false);
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="relative ">
-      <input
-        value={inputValue}
-        onChange={inputChange}
-        onFocus={() => {
-          setFocused(true);
-        }}
-        onBlur={() => {
-          setFocused(false);
-        }}
-        className="bg-black border-solid border text-sm md:text-base border-white px-1 p-2 text-white rounded focus:outline-none md:p-2 "
-      />
+    <>
+      <div className="relative ">
+        <input
+          value={inputValue}
+          onChange={inputChange}
+          onFocus={() => {
+            setFocused(true);
+          }}
+          onBlur={() => {
+            setFocused(false);
+          }}
+          className={styles}
+          placeholder="Username"
+        />
+      </div>
       {suggestions.length > 0 && (focused || !hovered) && (
         <ul
           onMouseOver={() => {
@@ -41,20 +46,20 @@ const Autocomplete = ({
           onMouseDown={() => {
             setHovered(false);
           }}
-          className="absolute w-full mt-1 py-2 bg-black border border-gray-300 rounded-lg shadow-lg"
+          className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52"
         >
           {suggestions.map((suggestion, index) => (
             <li
               key={index}
               onClick={() => suggestionClick(suggestion)}
-              className="px-4 py-2 cursor-pointer hover:bg-gray-900 text-ellipsis"
+              className="px-2 py-2 cursor-pointer text-ellipsis hover:underline"
             >
               {suggestion.username}
             </li>
           ))}
         </ul>
       )}
-    </div>
+    </>
   );
 };
 

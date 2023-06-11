@@ -19,20 +19,39 @@ export default function User({ masteryData, rankedData }: PropType) {
 
   return (
     <>
-      <div className="w-full text-white text-lg flex justify-center ">
-        <div className="md:w-1/2 w-full flex justify-around border-b">
-          <div
-            className="basis-1/2 text-center hover:bg-gray-900 hover:cursor-pointer select-none"
-            onClick={() => setCurrentTab("statistic")}
-          >
-            Statistics
-          </div>
-          <div
-            className="basis-1/2 text-center hover:bg-gray-900 hover:cursor-pointer select-none"
-            onClick={() => setCurrentTab("mastery")}
-          >
-            Mastery
-          </div>
+      <div className="w-full text-lg flex justify-center ">
+        <div className="tabs">
+          {currentTab === "mastery" ? (
+            <>
+              <div
+                className="tab tab-lg tab-bordered hover:cursor-pointer"
+                onClick={() => setCurrentTab("statistic")}
+              >
+                Statistics
+              </div>
+              <div
+                className="tab tab-lg tab-active tab-bordered hover:cursor-pointer"
+                onClick={() => setCurrentTab("mastery")}
+              >
+                Mastery
+              </div>
+            </>
+          ) : (
+            <>
+              <div
+                className="tab tab-lg tab-active tab-bordered hover:cursor-pointer"
+                onClick={() => setCurrentTab("statistic")}
+              >
+                Statistics
+              </div>
+              <div
+                className="tab tab-lg tab-bordered hover:cursor-pointer"
+                onClick={() => setCurrentTab("mastery")}
+              >
+                Mastery
+              </div>
+            </>
+          )}
         </div>
       </div>
       {currentTab === "mastery" ? (
@@ -47,8 +66,8 @@ export default function User({ masteryData, rankedData }: PropType) {
 function Mastery({ masteryData }: { masteryData: CharacterMastery[] }) {
   return masteryData.length > 0 ? (
     <div className="w-full flex justify-center mt-2">
-      <div className="xl:w-1/2 md:w-3/4 w-full flex flex-col divide-y bg-black ">
-        <div className="flex bg-gray-200 text-black  md:px-4 md:rounded-t-lg py-1 px-3">
+      <div className="xl:w-1/2 md:w-3/4 w-full flex flex-col divide-y divide-dotted ">
+        <div className="flex text-neutral-content bg-neutral  md:px-4 md:rounded-t-lg py-1 px-3">
           <div className="basis-1/5 ">
             <p className="sm:block hidden">Character</p>
           </div>
@@ -75,5 +94,5 @@ function Mastery({ masteryData }: { masteryData: CharacterMastery[] }) {
 }
 
 function Statistics({ rankedData }: { rankedData: RankedPlayerData | string }) {
-  return <p>WIP</p>;
+  return <div>WIP</div>;
 }

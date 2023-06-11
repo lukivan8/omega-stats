@@ -5,6 +5,9 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import Image from "next/image";
 import React from "react";
 import { CharacterMastery } from "../lib/utils/dto";
+import Star from "./svg/star";
+import Checkmark from "./svg/checkmark";
+import Cross from "./svg/cross";
 
 function validateCharName(charName: string): string {
   if (!CharData.hasOwnProperty(charName)) {
@@ -29,7 +32,7 @@ export default function MasteryItem({
 
   if (validCharName !== "") {
     return (
-      <div className="flex justify-evenly py-2 md:px-4 px-3 items-center">
+      <div className="flex justify-evenly py-2 md:px-4 px-3 text-primary-content items-center">
         <div className="basis-[20%] md:flex items-center gap-2">
           <Image
             width={40}
@@ -56,7 +59,7 @@ export default function MasteryItem({
               <p className="hidden sm:block">
                 {currentTierXp}/{xpToNextTier}
               </p>
-              <ProgressBar
+              {/* <ProgressBar
                 baseBgColor="rgb(3, 7, ,18)"
                 bgColor="#fff"
                 className="sm:w-3/4 w-full border border-gray-500 rounded-[2rem]"
@@ -64,6 +67,11 @@ export default function MasteryItem({
                 completed={progress}
                 customLabel=" "
                 animateOnRender
+              /> */}
+              <progress
+                className="progress progress-accent"
+                max={100}
+                value={progress}
               />
             </>
           )}
