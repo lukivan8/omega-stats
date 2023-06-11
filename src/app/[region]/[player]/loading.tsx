@@ -5,7 +5,7 @@ export default function Loading() {
   return (
     <div className="flex justify-center items-center h-[70vh]">
       <Image
-        src={"/emoticons/luna-calculating.webp"}
+        src={"/emoticons/EmoticonData_ChaoticRocketeerMasteryAnimated.webp"}
         alt={"Loading"}
         width={400}
         height={400}
