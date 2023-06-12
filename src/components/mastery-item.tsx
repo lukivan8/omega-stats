@@ -34,13 +34,14 @@ export default function MasteryItem({
   const validCharName = validateCharName(characterAssetName);
   const progress = Math.round((currentTierXp / xpToNextTier) * 100);
   const collected = currentTier - idxHighestTierCollected === 1;
-  let displayName = validCharName[0].toUpperCase() + validCharName.slice(1);
-  if (displayName in charNameExceptions) {
-    displayName =
-      charNameExceptions[displayName as keyof typeof charNameExceptions];
-  }
+  let displayName;
 
   if (validCharName !== "") {
+    displayName = validCharName[0].toUpperCase() + validCharName.slice(1);
+    if (displayName in charNameExceptions) {
+      displayName =
+        charNameExceptions[displayName as keyof typeof charNameExceptions];
+    }
     return (
       <div className="flex justify-evenly py-2 md:px-4 px-3 text-primary-content items-center">
         <div className="basis-[20%] md:flex items-center gap-2">
