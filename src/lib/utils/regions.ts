@@ -1,8 +1,8 @@
 export const regions = {
-  global: "Global",
-  asia: "Asia",
-  na: "NorthAmerica",
-  sa: "SouthAmerica",
   eu: "Europe",
+  na: "NorthAmerica",
+  asia: "Asia",
   oce: "Oceania",
+  sa: "SouthAmerica",
+  global: "Global",
 };

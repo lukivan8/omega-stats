@@ -2,12 +2,20 @@ import React from "react";
 import { os } from "@/constants/api";
 import { NotFound, UnexpectedError } from "@/components/error-page";
 import User from "@/components/user";
+import {
+  CharacterMastery,
+  PlayerData,
+  PlayerRankedData,
+} from "@/lib/utils/dto";
+import { regions } from "@/lib/utils/regions";
 
 type PropType = {
   params: { region: string; player: string };
 };
 
-async function fetchMastery(player: string) {
+async function fetchMastery(
+  player: string
+): Promise<CharacterMastery[] | string> {
   try {
     let masteries = await os.mastery(player);
     let res = masteries.characterMasteries.sort(
@@ -19,7 +27,7 @@ async function fetchMastery(player: string) {
   }
 }
 
-async function fetchPlayer(player: string) {
+async function fetchPlayer(player: string): Promise<PlayerData | string> {
   try {
     let playerData = await os.player(player);
     return playerData;
@@ -28,30 +36,32 @@ async function fetchPlayer(player: string) {
   }
 }
 
-async function fetchRanked(playerName: string, region: string) {
-  try {
-    let data = await os.ranked(playerName, region);
-    return data;
-  } catch (e) {
-    return `${e}`;
-  }
-}
-
-export default async function UserPage({
-  params: { region, player },
-}: PropType) {
+export default async function UserPage({ params: { player } }: PropType) {
   const masteryData = await fetchMastery(player);
   const playerData = await fetchPlayer(player);
-  const rankedData = await fetchRanked(player, region);
-  console.log(rankedData);
+  const rankedData: PlayerRankedData | null = await Promise.all([
+    os.ranked(player, "Europe"),
+    os.ranked(player, "NorthAmerica"),
+    os.ranked(player, "Asia"),
+    os.ranked(player, "Oceania"),
+    os.ranked(player, "SouthAmerica"),
+  ]).then((res) => {
+    for (let item in res) {
+      if (res[item] !== null) {
+        return res[item];
+      }
+      continue;
+    }
+    return null;
+  });
 
   //TODO: Красивый хэдер с карточкой
 
   if (typeof masteryData !== "string" && typeof playerData !== "string") {
     return (
       <div>
-        <div className="sm:w-1/2 w-full mx-auto flex justify-center mb-6 gap-6">
-          <h2 className="sm:text-6xl text-[2.7rem] font-bold">
+        <div className="mx-auto mb-6 flex w-full justify-center gap-6 sm:w-1/2">
+          <h2 className="text-[2.7rem] font-bold text-primary-content sm:text-6xl">
             {playerData.username}
           </h2>
         </div>

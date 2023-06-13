@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Omega Stats",
-  description: "The website for Omega Strikers data",
+  description: "Minimalistic way to track your Omega Strikers statistics",
 };
 
 export default function RootLayout({
@@ -14,18 +14,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {children}
-        <footer className="h-20">
-          <div className=" bg-gray-950 fixed bottom-0 w-full">
-            <p className="text-white text-sm sm:text-base mx-auto w-1/2 text-center">
-              This website was created by{" "}
-              <a className="underline" href="https://github.com/LukIvan8">
-                Lukov Ivan
-              </a>
-            </p>
-          </div>
+    <html lang="en" data-theme="black">
+      <body className="relative min-h-screen">
+        <div className="pb-12">{children}</div>
+
+        <footer className="footer footer-center absolute bottom-0 h-8 w-full bg-base-300 text-base-content">
+          <p className="inline w-full text-center text-sm">
+            This website was created by{" "}
+            <a className="underline" href="https://github.com/LukIvan8">
+              Lukov Ivan
+            </a>
+          </p>
         </footer>
       </body>
     </html>
