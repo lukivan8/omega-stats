@@ -9,7 +9,7 @@ import {
   Leaderboard,
   LevelData,
   PlayerData,
-  RankedPlayerData,
+  RankedAPIResponse,
   StrikerMastery,
 } from "./utils/dto";
 import { searchPlayer, searchInfo } from "./utils/searchPlayer";
@@ -96,22 +96,20 @@ export default class OmegaStrikers {
   }
 
   // < Show Profile (Ranked) >
-  async ranked(playerName: string, region: string): Promise<PlayerRankedData> {
-    const playerId = await this.search(playerName);
-    if (!regions.hasOwnProperty(region.toLowerCase()))
-      throw new OSError("Invalid region defined");
-
+  async ranked(
+    playerName: string,
+    region: string
+  ): Promise<PlayerRankedData | null> {
+    const player = await this.player(playerName);
+    const playerId = player.playerId;
     try {
-      const { data } = await this.instance.get(
-        `/v1/ranked/leaderboard/search/${playerId}?entriesBefore=1&entriesAfter=1&specificRegion=${selectServer(
-          region
-        )}`
+      const { data } = await this.instance.get<RankedAPIResponse>(
+        `/v1/ranked/leaderboard/search/${playerId}?entriesBefore=0&entriesAfter=0&specificRegion=${region}`
       );
-      return searchInfo(playerName, data);
+      const result = data.players[0];
+      return result;
     } catch (e) {
-      throw new OSError(
-        "This player either doesn't have any ranked games or is not among the top 10,000 players."
-      );
+      return null;
     }
   }
 

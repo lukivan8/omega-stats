@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Loading() {
   return (
-    <div className="flex justify-center items-center h-[70vh]">
+    <div className="flex h-[70vh] items-center justify-center">
       <Image
         src={"/emoticons/luna-calculating.webp"}
         alt={"Loading"}

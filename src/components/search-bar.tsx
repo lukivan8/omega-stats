@@ -9,7 +9,6 @@ import React, { useState } from "react";
 import { PlayerData } from "@/lib/utils/dto";
 
 export default function SearchBar({ mainPage }: { mainPage?: boolean }) {
-  const server = "global";
   const path = usePathname();
   const [inputValue, setInputValue] = useState("");
   const [suggestions, setSuggestions] = useState<PlayerData[]>([]);
@@ -34,16 +33,16 @@ export default function SearchBar({ mainPage }: { mainPage?: boolean }) {
     <div className="dropdown">
       {/* Search bar */}
       <form>
-        <div className="flex w-full justify-center border rounded items-center py-1 px-2 ">
+        <div className="flex w-full items-center justify-center rounded border px-2 py-1 ">
           <input
             value={inputValue}
             onChange={handleInputChange}
-            className="text-base bg-base-100 border-white px-1 rounded w-full focus:outline-none md:p-2"
+            className="w-full rounded border-white bg-base-100 px-1 text-base focus:outline-none md:p-2"
             placeholder={mainPage ? "Username | ex: Bells" : "Username"}
           />
           <Link
             className="text-xs"
-            href={inputValue !== "" ? "/" + server + "/" + inputValue : path}
+            href={inputValue !== "" ? "/" + inputValue : path}
           >
             <button type="submit">
               <Image src="/icons/lens.svg" alt={"go"} width={22} height={22} />
@@ -57,13 +56,13 @@ export default function SearchBar({ mainPage }: { mainPage?: boolean }) {
         <div className="relative">
           <ul
             tabIndex={0}
-            className="p-2 w-full absolute shadow-lg menu z-10 dropdown-content bg-base-100 rounded-box"
+            className="dropdown-content menu rounded-box absolute z-10 w-full bg-base-100 p-2 shadow-lg"
           >
             {suggestions.map((suggestion, index) => (
               <li
                 key={index}
                 onClick={() => handleSuggestionClick(suggestion)}
-                className="px-2 py-2 mt-[2px] bg-base-100 cursor-pointer hover:bg-neutral-focus"
+                className="mt-[2px] cursor-pointer bg-base-100 px-2 py-2 hover:bg-neutral-focus"
               >
                 {suggestion.username}
               </li>

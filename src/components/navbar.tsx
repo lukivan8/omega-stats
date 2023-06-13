@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="flex flex-row justify-between lg:justify-normal gap-4 items-center px-8 py-3">
+    <div className="flex flex-row items-center justify-between gap-4 px-8 py-3 lg:justify-normal">
       <Link href={"/"}>
         <Image
           src="/icons/logo.svg"

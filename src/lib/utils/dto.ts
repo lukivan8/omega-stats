@@ -1,26 +1,3 @@
-export interface RankedPlayerData {
-  username: string;
-  playerId: string;
-  logoId: string;
-  title: string;
-  nameplateId: string;
-  emoticonId: string;
-  titleId: string;
-  tags: string[];
-  platformIds: {};
-  masteryLevel: number;
-  organization: { organizationId: string; name: string; logoId: string };
-  rank: number;
-  wins: number;
-  losses: number;
-  games: number;
-  topRole: string;
-  rating: number;
-  mostPlayedCharacters: CharacterData[];
-  currentDivisionId: string;
-  progressToNext: number;
-}
-
 export interface PlayerData {
   username: string;
   playerId: string;
@@ -34,8 +11,6 @@ export interface PlayerData {
   masteryLevel: number;
   organization: { organizationId: string; name: string; logoId: string };
 }
-
-export type Leaderboard = { players: RankedPlayerData[] };
 
 export interface LevelData {
   timestamp: string;
@@ -66,8 +41,10 @@ export interface PlayerRankedData {
   rating: number;
   mostPlayedCharacters: CharacterData[];
   currentDivisionId: string;
-  progressToNext: 0;
+  progressToNext: number;
 }
+
+export type Leaderboard = { players: PlayerRankedData[] };
 
 export interface CharacterData {
   characterId: string;
@@ -111,4 +88,10 @@ export interface CharacterMastery {
   currentTier: number;
   currentTierXp: number;
   xpToNextTier: number;
+}
+
+export interface RankedAPIResponse {
+  players: PlayerRankedData[];
+  paging: { startRank: number; pageSize: number; totalItems: number };
+  specificRegion: string;
 }
