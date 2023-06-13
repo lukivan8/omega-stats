@@ -8,7 +8,7 @@ export function UnexpectedError() {
         <Image
           width={200}
           height={200}
-          src={"/emoticons/dubu-shock.png"}
+          src={"/emotes/EmoticonData_DubuShocked.png"}
           alt={"error"}
         />
         <p className="text-3xl md:text-4xl xl:text-6xl">
@@ -26,7 +26,7 @@ export function NotFound({ username }: { username: string }) {
         <Image
           width={200}
           height={200}
-          src={"/emoticons/drekar_what.png"}
+          src={"/emotes/EmoticonData_DrekarDetective.png"}
           alt={"404"}
         />
         <div className="flex flex-col items-end">
