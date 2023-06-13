@@ -5,14 +5,14 @@ import React from "react";
 export function UnexpectedError() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row w-full justify-center h-[70vh] items-center gap-10">
+      <div className="flex h-[70vh] w-full flex-col items-center justify-center gap-10 md:flex-row">
         <Image
           width={200}
           height={200}
-          src={"/emoticons/dubu-shock.png"}
+          src={"/emotes/EmoticonData_DubuShocked.png"}
           alt={"error"}
         />
-        <p className="xl:text-6xl md:text-4xl text-3xl">
+        <p className="text-3xl md:text-4xl xl:text-6xl">
           Unexpected error occured
         </p>
       </div>
@@ -23,18 +23,18 @@ export function UnexpectedError() {
 export function NotFound({ username }: { username: string }) {
   return (
     <div>
-      <div className="flex flex-col md:flex-row w-full justify-center md:h-[80vh] h-[70vh] items-center gap-10">
+      <div className="flex h-[70vh] w-full flex-col items-center justify-center gap-10 md:h-[80vh] md:flex-row">
         <Image
           width={200}
           height={200}
-          src={"/emoticons/drekar_what.png"}
+          src={"/emotes/EmoticonData_DrekarDetective.png"}
           alt={"404"}
         />
         <div className="flex flex-col items-end">
-          <p className="xl:text-6xl md:text-4xl text-3xl">
+          <p className="text-3xl md:text-4xl xl:text-6xl">
             This player doesn&apos;t exist
           </p>
-          <p className="text-gray-400 xl:text-4xl md:text-2xl text-xl">
+          <p className="text-xl text-gray-400 md:text-2xl xl:text-4xl">
             Username: {username}
           </p>
         </div>
