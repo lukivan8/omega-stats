@@ -106,7 +106,7 @@ function Statistics({ rankedData }: { rankedData: PlayerRankedData | null }) {
           <div className="card-body">
             <h2 className="card-title">
               <Image
-                src="/emoticons/T_AimiSweat-512x512.webp"
+                src="/icons/developing.webp"
                 alt=""
                 width={30}
                 height={30}
