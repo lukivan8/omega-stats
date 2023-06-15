@@ -24,7 +24,7 @@ export default function User({ masteryData, rankedData }: PropType) {
                 className="tab-bordered tab tab-lg hover:cursor-pointer"
                 onClick={() => setCurrentTab("statistic")}
               >
-                Statistics
+                Ranked
               </div>
               <div
                 className="tab-bordered tab tab-active tab-lg hover:cursor-pointer"
@@ -39,7 +39,7 @@ export default function User({ masteryData, rankedData }: PropType) {
                 className="tab-bordered tab tab-active tab-lg hover:cursor-pointer"
                 onClick={() => setCurrentTab("statistic")}
               >
-                Statistics
+                Ranked
               </div>
               <div
                 className="tab-bordered tab tab-lg hover:cursor-pointer"
@@ -91,13 +91,27 @@ function Mastery({ masteryData }: { masteryData: CharacterMastery[] }) {
 }
 
 function Statistics({ rankedData }: { rankedData: PlayerRankedData | null }) {
-  // if (rankedData === null) {
-  //   return (
-  //     <div className="mt-2 flex w-full justify-center">
-  //       This player is not in top 10.000 players
-  //     </div>
-  //   );
-  // }
+  if (rankedData === null) {
+    return (
+      <div className="flex w-full justify-center">
+        <div className="flex w-full flex-col items-center md:w-1/2">
+          <div className="card w-full bg-base-100 shadow-xl md:w-3/4">
+            <div className="card-body">
+              <h2 className="card-title">
+                <Image
+                  src="/emotes/EmoticonData_BlobSad.png"
+                  alt=""
+                  width={50}
+                  height={50}
+                />
+                This player isn&apos;t in top 10,000 players of his region
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex w-full justify-center">

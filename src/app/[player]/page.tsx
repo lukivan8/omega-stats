@@ -7,7 +7,6 @@ import {
   PlayerData,
   PlayerRankedData,
 } from "@/lib/utils/dto";
-import { regions } from "@/lib/utils/regions";
 
 type PropType = {
   params: { region: string; player: string };

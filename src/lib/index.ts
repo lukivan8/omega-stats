@@ -100,9 +100,10 @@ export default class OmegaStrikers {
     playerName: string,
     region: string
   ): Promise<PlayerRankedData | null> {
-    const player = await this.player(playerName);
-    const playerId = player.playerId;
     try {
+      const player = await this.player(playerName);
+      const playerId = player.playerId;
+
       const { data } = await this.instance.get<RankedAPIResponse>(
         `/v1/ranked/leaderboard/search/${playerId}?entriesBefore=0&entriesAfter=0&specificRegion=${region}`
       );
